@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doña Lita</title>
+    <link rel="shortcut icon" href="fotos/Logo.png" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+</head>
+
+<body  class="fondcont">
+    <nav class="navbar navbar-expand-md bg-danger">
+        <a class="navbar-brand" href="#">
+            <img src="fotos/Logo.png" alt="Logo" />
+        </a>
+
+        <div class="navbar navbar-expand-md bg-danger navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pedinos.html">Pedínos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="encontranos.html">Encontranos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1 class="titucont">Contacto</h1>
+        <div class="contacto">
+            <form class="formulario" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="form3">
+                <div>
+                    <label for="nombre" class="letra"> Tu nombre y apellido </label> <br>
+                    <input class="edit_label" type="text" name="nombre" placeholder="Nombre y apellido" required />
+                    
+                </div> <br>
+                <div>
+                    <label for="mail" class="letra"> Tu Correo electrónico</label> <br>
+                    <input class="edit_label" type="email" name="mail" placeholder="Escribí tu correo" required />
+                </div> <br>
+                <div>
+
+                <label for="telefono" class="letra"> Tu teléfono</label> <br>
+                <input class="edit_label" type="number" name="telefono" placeholder="Escribí tu numero" />
+            </div> <br>
+
+                <div>
+                    <label for="pasta fav" class="letra">¡Mientras contános cual es tu pasta favorita!</label><br>
+                    <select name="pasta fav" class="edit_label">
+                        <option></option>
+                        <option>Sorrentinos</option>
+                        <option>Canelones</option>
+                        <option>Spaghettis</option>
+                        <option>Ravioles</option>
+                        <option>Raviolones</option>
+                        <option>Lasagna</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form2">
+                <div>
+                    <label for="Comentario" class="letra"> ¿Que querés decirnos? </label> <br>
+                    <textarea class="edit_label2" name="Comentario" cols="30" rows="10"
+                        placeholder="Dejános tu comentario" required></textarea><br />
+                </div> 
+                <div>
+
+                <input class="edit_label2" type="submit" name="Enviar" /> <br> <br>
+                <input class="edit_label2" type="reset" name="Borra" />
+                </div>
+
+            </div>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img class="copy" src="fotos/copy.png" alt="copy">
+        <div class=imgfoot>
+            <img class="fb" src="fotos/facebook.png" alt="fb">
+            <img class="ig" src="fotos/instagram.png" alt="ig">
+            <img class="wpp" src="fotos/whatsapp.png" alt="wpp">
+            <img class="mail" src="fotos/gmail.png" alt="mail">
+        </div>
+    </footer>
+</body>
+
+</html>
