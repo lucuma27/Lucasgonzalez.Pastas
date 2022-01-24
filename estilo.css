@@ -249,7 +249,9 @@ span {
   margin-top: 5%;
 }
 
-.mg, .pa, .lz {
+.mg,
+.pa,
+.lz {
   width: 500px;
   height: 500px;
   margin-left: 57px;
@@ -269,6 +271,64 @@ span {
 .tit {
   font-family: "curs";
   font-size: 30px;
+}
+
+.fonnos {
+  background-image: url(fotos/fondo6.jpg);
+}
+
+.titn {
+  font-family: "curs";
+  font-size: 50px;
+  position: relative;
+  margin-top: 18%;
+  float: left;
+  color: white;
+}
+
+.mis, .vis, .val {
+  width: 30%;
+  float: right;
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  color: white;
+}
+
+.mis h3, .vis h3, .val h3 {
+  font-family: "curs";
+  font-size: 35px;
+}
+
+.mis p, .vis p, .val p {
+  font-family: "gral";
+}
+
+.vis {
+  margin-top: 12%;
+}
+
+.vis h3 {
+  font-family: "curs";
+  font-size: 35px;
+}
+
+.vis p {
+  font-family: "gral";
+}
+
+.val {
+  margin-top: 4%;
+  margin-left: 50%;
+}
+
+.val h3 {
+  font-family: "curs";
+  font-size: 35px;
+}
+
+.val p {
+  font-family: "gral";
 }
 
 footer {

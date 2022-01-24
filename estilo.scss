@@ -4,18 +4,21 @@
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "cont";
   src: url("fuentes/BebasNeue-Regular.ttf");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "gral";
   src: url("fuentes/Louis\ George\ Cafe\ Bold.ttf");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "icon";
   src: url("fuentes/Type\ Icons.ttf");
@@ -69,6 +72,7 @@ nav {
     margin-left: 15px;
   }
 }
+
 .titulo {
   position: absolute;
   top: 50%;
@@ -90,21 +94,22 @@ nav {
 
 // HACE TU PEDIDO
 
-.piepag{
-    height: 158vh;
-    position: absolute;
+.piepag {
+  height: 158vh;
+  position: absolute;
 }
 
-.pedido{
-    background-image: url(fotos/1400.png);
-    height: 149vh;
+.pedido {
+  background-image: url(fotos/1400.png);
+  height: 149vh;
 }
 
 .card-columns {
   .col {
     .card {
       margin-top: 40px;
-    width: 91%;
+      width: 91%;
+
       img {
         width: 100%;
         height: auto;
@@ -114,60 +119,63 @@ nav {
 }
 
 .form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    .sucu {
-        font-style: italic;
-        color: white;
-        font-size: 20px;
-      }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .sucu {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
   }
-  .selec {
-    background-color: bisque;
-    height: 30px;
-    width: 150px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: medium;
-  }
+}
+
+.selec {
+  background-color: bisque;
+  height: 30px;
+  width: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+}
 
 
-  .botonenv2 {
-    width: 15%;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5e870;
-    outline: none;
-    font-size: 16px;
-    border: none;
-    color: black;
-    padding: 15px 0px;
-    cursor: pointer;
-  }
-  
-  .botonenv2:hover {
-    background-color: orange;
-  }
-  
-  .botonborra2 {
-@extend .botonenv2;
-  }
-  
-  .botonborra2:hover {
-    background-color: orange;
-  }
+.botonenv2 {
+  width: 15%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5e870;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  color: black;
+  padding: 15px 0px;
+  cursor: pointer;
+}
 
-  // CONTACTO
+.botonenv2:hover {
+  background-color: orange;
+}
 
-.fondcont{
+.botonborra2 {
+  @extend .botonenv2;
+}
+
+.botonborra2:hover {
+  background-color: orange;
+}
+
+// CONTACTO
+
+.fondcont {
   background-image: url(fotos/fondo5.jpg);
 
-  .contacto{
+  .contacto {
     align-items: center;
     margin-top: 25px;
-    form{
-      div{
-        .letra{
+
+    form {
+      div {
+        .letra {
           font-size: 25px;
         }
       }
@@ -175,7 +183,7 @@ nav {
   }
 }
 
-.form3{
+.form3 {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -185,7 +193,7 @@ nav {
   font-family: "cont";
   display: block;
 
-  .edit_label{
+  .edit_label {
     width: 40%;
     border: 2px solid brown;
     border-radius: 20px;
@@ -193,45 +201,45 @@ nav {
   }
 }
 
-.form2{
+.form2 {
   @extend .form3;
   margin-left: 60%;
   margin-top: -24%;
 
-  .edit_label2{
+  .edit_label2 {
     @extend .edit_label;
     width: 65%;
   }
 
 }
 
-  .titucont{
-    @extend .titulo;
-    top: 12%;
-    left: 20%;
-    font-size: 60px;
-  }
+.titucont {
+  @extend .titulo;
+  top: 12%;
+  left: 20%;
+  font-size: 60px;
+}
 
 
- //ENCONTRANOS
+//ENCONTRANOS
 
- .fonen{
-   background-color:rgb(248, 231, 226);
- }
+.fonen {
+  background-color: rgb(248, 231, 226);
+}
 
- .titen{
-   @extend .titulo;
-   color: black;
-   top: 12%;
-   left: 10%;
-   font-size: 45px;
- }
+.titen {
+  @extend .titulo;
+  color: black;
+  top: 12%;
+  left: 10%;
+  font-size: 45px;
+}
 
- span{
-   font-family: "icon";
- }
+span {
+  font-family: "icon";
+}
 
- .gps {
+.gps {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -248,7 +256,9 @@ nav {
   margin-top: 5%;
 }
 
-.mg, .pa, .lz {
+.mg,
+.pa,
+.lz {
   width: 500px;
   height: 500px;
   margin-left: 57px;
@@ -261,61 +271,125 @@ nav {
 }
 
 
-.txts{
+.txts {
   font-family: "gral";
   font-size: 15px;
 }
 
-.tit{
+.tit {
   font-family: "curs";
   font-size: 30px;
 }
 
-  // FOOTER
-  
+//NOSOTROS
 
-  footer {
-    padding: 12px 0px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .copy {
-    height: auto;
-    width: 35px;
-    float: left;
-    display: inline-block;
-    margin-top: 0px 0px 0px 0px;
-  }
-  
-  .imgfoot {
-    float: right;
-    display: inline-block;
-  }
-  
-  .fb {
-    height: auto;
-    width: 35px;
-    padding: 0px 4px;
-  }
-  
-  .ig {
-    height: auto;
-    width: 35px;
-    padding: 0px 4px;
-  }
-  
-  .wpp {
-    height: auto;
-    width: 35px;
-    padding: 0px 4px;
-  }
-  
-  .mail {
-    height: auto;
-    width: 35px;
-    padding: 0px 4px;
+.fonnos {
+  background-image: url(fotos/fondo6.jpg);
+}
+
+.titn {
+  font-family: "curs";
+  font-size: 50px;
+  position: relative;
+  margin-top: 18%;
+  float: left;
+  color: white;
+}
+
+.mis {
+  width: 30%;
+  float: right;
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  color: white;
+
+  h3 {
+    font-family: "curs";
+    font-size: 35px;
+
   }
 
+  p {
+    font-family: "gral";
+  }
+
+}
+
+.vis {
+  @extend .mis;
+  margin-top: 12%;
+
+  h3 {
+    font-family: "curs";
+    font-size: 35px;
+  }
+
+  p {
+    font-family: "gral";
+  }
+}
+
+.val {
+  @extend .mis;
+  margin-top: 4%;
+  margin-left: 50%;
+
+  h3 {
+    font-family: "curs";
+    font-size: 35px;
+
+  }
+
+  p {
+    font-family: "gral";
+  }
+}
+
+// FOOTER
+
+
+footer {
+  padding: 12px 0px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.copy {
+  height: auto;
+  width: 35px;
+  float: left;
+  display: inline-block;
+  margin-top: 0px 0px 0px 0px;
+}
+
+.imgfoot {
+  float: right;
+  display: inline-block;
+}
+
+.fb {
+  height: auto;
+  width: 35px;
+  padding: 0px 4px;
+}
+
+.ig {
+  height: auto;
+  width: 35px;
+  padding: 0px 4px;
+}
+
+.wpp {
+  height: auto;
+  width: 35px;
+  padding: 0px 4px;
+}
+
+.mail {
+  height: auto;
+  width: 35px;
+  padding: 0px 4px;
+}
