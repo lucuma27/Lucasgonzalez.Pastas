@@ -56,7 +56,7 @@ nav p {
   margin-left: 15px;
 }
 
-.titulo, .titen, .titucont {
+.titulo {
   position: absolute;
   top: 50%;
   left: 65%;
@@ -64,7 +64,7 @@ nav p {
   font-family: "curs";
   text-align: center;
 }
-.titulo h1, .titen h1, .titucont h1 {
+.titulo h1 {
   font-size: 80px;
 }
 
@@ -147,7 +147,7 @@ nav p {
   font-size: 25px;
 }
 
-.form3, .form2 {
+.form3 {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -157,7 +157,7 @@ nav p {
   font-family: "cont";
   display: block;
 }
-.form3 .edit_label, .form2 .edit_label, .form2 .edit_label2 {
+.form3 .edit_label {
   width: 40%;
   border: 2px solid brown;
   border-radius: 20px;
@@ -165,14 +165,27 @@ nav p {
 }
 
 .form2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  font-family: "cont";
+  display: block;
   margin-left: 60%;
   margin-top: -24%;
 }
 .form2 .edit_label2 {
+  border: 2px solid brown;
+  border-radius: 20px;
+  padding: 10px;
   width: 65%;
 }
 
 .titucont {
+  position: absolute;
+  color: white;
+  font-family: "curs";
+  text-align: center;
   top: 12%;
   left: 20%;
   font-size: 60px;
@@ -183,6 +196,10 @@ nav p {
 }
 
 .titen {
+  position: absolute;
+  color: white;
+  font-family: "curs";
+  text-align: center;
   color: black;
   top: 12%;
   left: 10%;
@@ -247,7 +264,7 @@ span {
   color: white;
 }
 
-.mis, .val, .vis {
+.mis {
   width: 30%;
   float: right;
   text-align: center;
@@ -255,15 +272,20 @@ span {
   margin-top: 2%;
   color: white;
 }
-.mis h3, .val h3, .vis h3 {
+.mis h3 {
   font-family: "curs";
   font-size: 35px;
 }
-.mis p, .val p, .vis p {
+.mis p {
   font-family: "gral";
 }
 
 .vis {
+  width: 30%;
+  float: right;
+  text-align: center;
+  display: block;
+  color: white;
   margin-top: 12%;
 }
 .vis h3 {
@@ -275,6 +297,11 @@ span {
 }
 
 .val {
+  width: 30%;
+  float: right;
+  text-align: center;
+  display: block;
+  color: white;
   margin-top: 4%;
   margin-left: 50%;
 }
@@ -335,7 +362,7 @@ footer, .pieind {
 }
 
 @media only screen and (max-width: 1325px) {
-  .titulo, .titucont, .titen {
+  .titulo {
     position: absolute;
     top: 50%;
     left: 65%;
@@ -360,20 +387,37 @@ footer, .pieind {
   }
 
   .form2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
     margin-left: 60%;
     margin-top: -35%;
   }
   .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
     width: 65%;
   }
 
   .titucont {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
     top: 15%;
     left: 20%;
     font-size: 60px;
   }
 
   .titen {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
     color: black;
     top: 12%;
     left: 10%;
@@ -421,7 +465,7 @@ footer, .pieind {
     color: white;
   }
 
-  .mis, .vis, .val {
+  .mis {
     width: 30%;
     margin-right: 10%;
     text-align: center;
@@ -431,11 +475,21 @@ footer, .pieind {
   }
 
   .vis {
+    width: 30%;
+    float: right;
+    text-align: center;
+    display: block;
+    color: white;
     margin-right: 60%;
     margin-top: -21.5%;
   }
 
   .val {
+    width: 30%;
+    float: right;
+    text-align: center;
+    display: block;
+    color: white;
     margin-top: 0%;
     margin-right: 35%;
   }
@@ -464,5 +518,153 @@ footer, .pieind {
     width: 500px;
     height: 500px;
     margin-left: 350px;
+  }
+
+  .mis {
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    display: block;
+    margin-top: 8%;
+    color: white;
+  }
+
+  .vis {
+    width: 30%;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-right: 60%;
+    margin-top: -21.5%;
+  }
+
+  .val {
+    width: 30%;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-top: -5%;
+    margin-right: 32%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -44%;
+  }
+
+  .mis {
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    display: block;
+    margin-top: 5%;
+    color: white;
+  }
+
+  .vis {
+    width: 30%;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-right: 60%;
+    margin-top: -28%;
+  }
+
+  .val {
+    width: 30%;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-top: -5%;
+    margin-right: 32%;
+  }
+
+  .mg,
+.pa,
+.lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 280px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .titulo {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+  .titulo h1 {
+    font-size: 60px;
+  }
+
+  .form3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 20%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+  }
+  .form3 .edit_label {
+    width: 40%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -58%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 75%;
+  }
+
+  .fonnos {
+    height: 150vh;
+    position: absolute;
+  }
+
+  .mg,
+.pa,
+.lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 130px;
+  }
+
+  .gps {
+    margin-top: 10%;
+  }
+
+  .piepag {
+    height: 140vh;
+    position: absolute;
+  }
+
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 130vh;
   }
 }/*# sourceMappingURL=estilo.css.map */
