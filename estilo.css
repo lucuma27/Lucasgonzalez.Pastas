@@ -4,65 +4,51 @@
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "cont";
   src: url("fuentes/BebasNeue-Regular.ttf");
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "gral";
   src: url("fuentes/Louis George Cafe Bold.ttf");
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "icon";
   src: url("fuentes/Type Icons.ttf");
   font-style: normal;
   font-weight: normal;
 }
-
 * {
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav a img {
   height: 60px;
   width: 60px;
 }
-
 nav ul li {
   margin-left: 25px;
 }
-
 nav ul li a {
   font-size: 20px;
   color: white;
 }
-
 nav ul li a:hover {
   background-color: darkorange;
   color: black;
 }
-
 nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
-
 nav p {
   color: white;
   margin-top: 15px;
@@ -70,7 +56,7 @@ nav p {
   margin-left: 15px;
 }
 
-.titulo, .titucont, .titen {
+.titulo, .titen, .titucont {
   position: absolute;
   top: 50%;
   left: 65%;
@@ -78,13 +64,17 @@ nav p {
   font-family: "curs";
   text-align: center;
 }
-
-.titulo h1, .titucont h1, .titen h1 {
+.titulo h1, .titen h1, .titucont h1 {
   font-size: 80px;
 }
 
 .carousel-inner img {
   width: 100%;
+}
+
+.imgind {
+  width: 1920px;
+  height: 851px;
 }
 
 .piepag {
@@ -101,28 +91,17 @@ nav p {
   margin-top: 40px;
   width: 91%;
 }
-
 .card-columns .col .card img {
   width: 100%;
   height: auto;
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .form .sucu {
   font-style: italic;
   color: white;
@@ -160,26 +139,17 @@ nav p {
 .fondcont {
   background-image: url(fotos/fondo5.jpg);
 }
-
 .fondcont .contacto {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 25px;
 }
-
 .fondcont .contacto form div .letra {
   font-size: 25px;
 }
 
 .form3, .form2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 10%;
   margin-top: 10%;
   color: white;
@@ -187,7 +157,6 @@ nav p {
   font-family: "cont";
   display: block;
 }
-
 .form3 .edit_label, .form2 .edit_label, .form2 .edit_label2 {
   width: 40%;
   border: 2px solid brown;
@@ -199,7 +168,6 @@ nav p {
   margin-left: 60%;
   margin-top: -24%;
 }
-
 .form2 .edit_label2 {
   width: 65%;
 }
@@ -226,16 +194,9 @@ span {
 }
 
 .gps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   border: none;
   outline: none;
   width: 100%;
@@ -286,7 +247,7 @@ span {
   color: white;
 }
 
-.mis, .vis, .val {
+.mis, .val, .vis {
   width: 30%;
   float: right;
   text-align: center;
@@ -294,25 +255,21 @@ span {
   margin-top: 2%;
   color: white;
 }
-
-.mis h3, .vis h3, .val h3 {
+.mis h3, .val h3, .vis h3 {
   font-family: "curs";
   font-size: 35px;
 }
-
-.mis p, .vis p, .val p {
+.mis p, .val p, .vis p {
   font-family: "gral";
 }
 
 .vis {
   margin-top: 12%;
 }
-
 .vis h3 {
   font-family: "curs";
   font-size: 35px;
 }
-
 .vis p {
   font-family: "gral";
 }
@@ -321,22 +278,23 @@ span {
   margin-top: 4%;
   margin-left: 50%;
 }
-
 .val h3 {
   font-family: "curs";
   font-size: 35px;
 }
-
 .val p {
   font-family: "gral";
 }
 
-footer {
+footer, .pieind {
   padding: 12px 0px;
   text-align: center;
   width: 100%;
-  position: absolute;
   bottom: 0;
+}
+
+.pieind {
+  position: absolute;
 }
 
 .copy {
@@ -375,4 +333,136 @@ footer {
   width: 35px;
   padding: 0px 4px;
 }
-/*# sourceMappingURL=estilo.css.map */
+
+@media only screen and (max-width: 1325px) {
+  .titulo, .titucont, .titen {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+
+  .imgind {
+    width: 1325px;
+    height: 762px;
+  }
+
+  .piepag {
+    height: 158vh;
+    position: absolute;
+  }
+
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 147.8vh;
+  }
+
+  .form2 {
+    margin-left: 60%;
+    margin-top: -35%;
+  }
+  .form2 .edit_label2 {
+    width: 65%;
+  }
+
+  .titucont {
+    top: 15%;
+    left: 20%;
+    font-size: 60px;
+  }
+
+  .titen {
+    color: black;
+    top: 12%;
+    left: 10%;
+    font-size: 45px;
+  }
+
+  .gps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+
+  .mg,
+.pa,
+.lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 400px;
+  }
+
+  .gps .art .titxt {
+    width: 65%;
+    text-align: center;
+    margin-left: 18%;
+  }
+
+  .titn {
+    font-family: "curs";
+    font-size: 40px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15px;
+    float: left;
+    color: white;
+  }
+
+  .mis, .vis, .val {
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    display: block;
+    margin-top: 10%;
+    color: white;
+  }
+
+  .vis {
+    margin-right: 60%;
+    margin-top: -21.5%;
+  }
+
+  .val {
+    margin-top: 0%;
+    margin-right: 35%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -38.5%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 65%;
+  }
+
+  .mg,
+.pa,
+.lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 350px;
+  }
+}/*# sourceMappingURL=estilo.css.map */

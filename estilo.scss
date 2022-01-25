@@ -92,6 +92,11 @@ nav {
   }
 }
 
+.imgind{
+  width: 1920px;
+  height: 851px;
+}
+
 // HACE TU PEDIDO
 
 .piepag {
@@ -317,7 +322,11 @@ span {
 }
 
 .vis {
-  @extend .mis;
+  width: 30%;
+  float: right;
+  text-align: center;
+  display: block;
+  color: white;;
   margin-top: 12%;
 
   h3 {
@@ -353,8 +362,12 @@ footer {
   padding: 12px 0px;
   text-align: center;
   width: 100%;
-  position: absolute;
   bottom: 0;
+}
+
+.pieind{
+  @extend footer;
+  position: absolute;
 }
 
 .copy {
@@ -393,3 +406,198 @@ footer {
   width: 35px;
   padding: 0px 4px;
 }
+
+@media only screen and (max-width: 1325px) {
+
+  .titulo {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  
+  }
+  .imgind{
+    width: 1325px;
+    height: 762px;
+  }
+
+
+  // HACE TU PEDIDO
+
+.piepag {
+  height: 158vh;
+  position: absolute;
+}
+
+.pedido {
+  background-image: url(fotos/1400.png);
+  height: 147.8vh;
+}
+
+// CONTACTO
+
+.form2 {
+  @extend .form3;
+  margin-left: 60%;
+  margin-top: -35%;
+
+  .edit_label2 {
+    @extend .edit_label;
+    width: 65%;
+  }
+
+}
+
+.titucont {
+  @extend .titulo;
+  top: 15%;
+  left: 20%;
+  font-size: 60px;
+}
+
+//ENCONTRANOS
+
+.titen {
+  @extend .titulo;
+  color: black;
+  top: 12%;
+  left: 10%;
+  font-size: 45px;
+}
+.gps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.mg,
+.pa,
+.lz {
+  width: 500px;
+  height: 500px;
+  margin-left: 400px;
+}
+
+.gps .art .titxt {
+  width: 65%;
+  text-align: center;
+  margin-left: 18%;
+}
+
+
+//NOSOTROS
+
+.titn {
+  font-family: "curs";
+  font-size: 40px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 15px;
+  float: left;
+  color: white;
+}
+
+.mis {
+  width: 30%;
+  margin-right: 10%;
+  text-align: center;
+  display: block;
+  margin-top: 10%;
+  color: white;
+
+}
+
+.vis {
+  @extend .mis;
+  margin-right: 60%;
+  margin-top: -21.5%;
+}
+
+.val {
+  @extend .mis;
+  margin-top: 0%;
+  margin-right: 35%;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+
+  // CONTACTO
+  
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -38.5%;
+  
+    .edit_label2 {
+      border: 2px solid brown;
+      border-radius: 20px;
+      padding: 10px;
+      width: 65%;
+    }
+  
+  }
+
+  //ENCONTRANOS
+.mg,
+.pa,
+.lz {
+  width: 500px;
+  height: 500px;
+  margin-left: 350px;
+}
+
+
+//NOSOTROS
+
+
+.mis {
+  width: 30%;
+  margin-right: 10%;
+  text-align: center;
+  display: block;
+  margin-top: 8%;
+  color: white;
+
+}
+
+.vis {
+  width: 30%;
+  text-align: center;
+  display: block;
+  color: white;
+  margin-right: 60%;
+  margin-top: -21.5%;
+}
+
+.val {
+  width: 30%;
+  text-align: center;
+  display: block;
+  color: white;
+  margin-top: 0%;
+  margin-right: 35%;
+}
+}
+
+
