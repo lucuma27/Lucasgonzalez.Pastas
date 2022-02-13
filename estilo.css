@@ -4,56 +4,94 @@
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "cont";
   src: url("fuentes/BebasNeue-Regular.ttf");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "gral";
   src: url("fuentes/Louis George Cafe Bold.ttf");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "icon";
   src: url("fuentes/Type Icons.ttf");
   font-style: normal;
   font-weight: normal;
 }
+
 * {
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
 }
 
-nav a img {
+nav {
+  background-color: #f55151;
+  height: 80px;
+}
+
+nav .imagen {
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+nav div img {
   height: 60px;
   width: 60px;
 }
+
+nav ul {
+  float: right;
+  margin-top: 1.2%;
+  margin-bottom: 1%;
+}
+
 nav ul li {
-  margin-left: 25px;
+  display: inline-block;
 }
+
 nav ul li a {
-  font-size: 20px;
   color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-decoration: none;
 }
+
 nav ul li a:hover {
   background-color: darkorange;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
   color: black;
 }
-nav div {
-  display: flex;
-  justify-content: end;
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
 }
-nav p {
-  color: white;
-  margin-top: 15px;
-  font-size: 20px;
-  margin-left: 15px;
+
+#check {
+  display: none;
 }
 
 .titulo {
@@ -64,6 +102,7 @@ nav p {
   font-family: "curs";
   text-align: center;
 }
+
 .titulo h1 {
   font-size: 80px;
 }
@@ -74,11 +113,11 @@ nav p {
 
 .imgind {
   width: 1920px;
-  height: 851px;
+  height: 857px;
 }
 
 .piepag {
-  height: 158vh;
+  height: 157vh;
   position: absolute;
 }
 
@@ -91,17 +130,28 @@ nav p {
   margin-top: 40px;
   width: 91%;
 }
+
 .card-columns .col .card img {
   width: 100%;
   height: auto;
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .form .sucu {
   font-style: italic;
   color: white;
@@ -116,7 +166,7 @@ nav p {
   font-size: medium;
 }
 
-.botonenv2, .botonborra2 {
+.botonenv2 {
   width: 15%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5e870;
@@ -128,8 +178,20 @@ nav p {
   cursor: pointer;
 }
 
-.botonenv2:hover, .botonborra2:hover {
+.botonenv2:hover {
   background-color: orange;
+}
+
+.botonborra2 {
+  width: 15%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5e870;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  color: black;
+  padding: 15px 0px;
+  cursor: pointer;
 }
 
 .botonborra2:hover {
@@ -139,17 +201,26 @@ nav p {
 .fondcont {
   background-image: url(fotos/fondo5.jpg);
 }
+
 .fondcont .contacto {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 25px;
 }
+
 .fondcont .contacto form div .letra {
   font-size: 25px;
 }
 
 .form3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 10%;
   margin-top: 10%;
   color: white;
@@ -157,6 +228,7 @@ nav p {
   font-family: "cont";
   display: block;
 }
+
 .form3 .edit_label {
   width: 40%;
   border: 2px solid brown;
@@ -165,8 +237,13 @@ nav p {
 }
 
 .form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   font-size: 18px;
   font-family: "cont";
@@ -174,6 +251,7 @@ nav p {
   margin-left: 60%;
   margin-top: -24%;
 }
+
 .form2 .edit_label2 {
   border: 2px solid brown;
   border-radius: 20px;
@@ -211,9 +289,16 @@ span {
 }
 
 .gps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   outline: none;
   width: 100%;
@@ -272,10 +357,12 @@ span {
   margin-top: 2%;
   color: white;
 }
+
 .mis h3 {
   font-family: "curs";
   font-size: 35px;
 }
+
 .mis p {
   font-family: "gral";
 }
@@ -288,10 +375,12 @@ span {
   color: white;
   margin-top: 12%;
 }
+
 .vis h3 {
   font-family: "curs";
   font-size: 35px;
 }
+
 .vis p {
   font-family: "gral";
 }
@@ -305,23 +394,24 @@ span {
   margin-top: 4%;
   margin-left: 50%;
 }
+
 .val h3 {
   font-family: "curs";
   font-size: 35px;
 }
+
 .val p {
   font-family: "gral";
 }
 
-footer, .pieind {
-  padding: 12px 0px;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
-}
-
-.pieind {
+footer {
   position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .copy {
@@ -362,6 +452,11 @@ footer, .pieind {
 }
 
 @media only screen and (max-width: 1325px) {
+  nav ul {
+    float: right;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+  }
   .titulo {
     position: absolute;
     top: 50%;
@@ -370,25 +465,18 @@ footer, .pieind {
     font-family: "curs";
     text-align: center;
   }
-
   .imgind {
     width: 1325px;
-    height: 762px;
+    height: 770px;
   }
-
-  .piepag {
-    height: 158vh;
-    position: absolute;
-  }
-
-  .pedido {
-    background-image: url(fotos/1400.png);
-    height: 147.8vh;
-  }
-
   .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -402,7 +490,6 @@ footer, .pieind {
     padding: 10px;
     width: 65%;
   }
-
   .titucont {
     position: absolute;
     color: white;
@@ -412,7 +499,9 @@ footer, .pieind {
     left: 20%;
     font-size: 60px;
   }
-
+  .encontra {
+    position: relative;
+  }
   .titen {
     position: absolute;
     color: white;
@@ -423,11 +512,17 @@ footer, .pieind {
     left: 10%;
     font-size: 45px;
   }
-
   .gps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
     outline: none;
     width: 100%;
@@ -440,21 +535,18 @@ footer, .pieind {
     margin-left: 2%;
     margin-top: 5%;
   }
-
   .mg,
-.pa,
-.lz {
+  .pa,
+  .lz {
     width: 500px;
     height: 500px;
     margin-left: 400px;
   }
-
   .gps .art .titxt {
     width: 65%;
     text-align: center;
     margin-left: 18%;
   }
-
   .titn {
     font-family: "curs";
     font-size: 40px;
@@ -464,7 +556,6 @@ footer, .pieind {
     float: left;
     color: white;
   }
-
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -473,7 +564,6 @@ footer, .pieind {
     margin-top: 10%;
     color: white;
   }
-
   .vis {
     width: 30%;
     float: right;
@@ -483,7 +573,6 @@ footer, .pieind {
     margin-right: 60%;
     margin-top: -21.5%;
   }
-
   .val {
     width: 30%;
     float: right;
@@ -494,10 +583,16 @@ footer, .pieind {
     margin-right: 35%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -511,15 +606,13 @@ footer, .pieind {
     padding: 10px;
     width: 65%;
   }
-
   .mg,
-.pa,
-.lz {
+  .pa,
+  .lz {
     width: 500px;
     height: 500px;
     margin-left: 350px;
   }
-
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -528,7 +621,6 @@ footer, .pieind {
     margin-top: 8%;
     color: white;
   }
-
   .vis {
     width: 30%;
     text-align: center;
@@ -537,7 +629,6 @@ footer, .pieind {
     margin-right: 60%;
     margin-top: -21.5%;
   }
-
   .val {
     width: 30%;
     text-align: center;
@@ -546,11 +637,30 @@ footer, .pieind {
     margin-top: -5%;
     margin-right: 32%;
   }
+  .piepag {
+    height: 148vh;
+    position: absolute;
+  }
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 139vh;
+  }
 }
+
 @media only screen and (max-width: 1050px) {
+  nav ul {
+    float: right;
+    margin-top: 1.9%;
+    margin-bottom: 1%;
+  }
   .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -558,7 +668,21 @@ footer, .pieind {
     margin-left: 60%;
     margin-top: -44%;
   }
-
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10%;
+    margin-top: 15%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+  }
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -567,7 +691,6 @@ footer, .pieind {
     margin-top: 5%;
     color: white;
   }
-
   .vis {
     width: 30%;
     text-align: center;
@@ -576,7 +699,6 @@ footer, .pieind {
     margin-right: 60%;
     margin-top: -28%;
   }
-
   .val {
     width: 30%;
     text-align: center;
@@ -585,31 +707,189 @@ footer, .pieind {
     margin-top: -5%;
     margin-right: 32%;
   }
-
   .mg,
-.pa,
-.lz {
+  .pa,
+  .lz {
     width: 500px;
     height: 500px;
     margin-left: 280px;
   }
+  .piepag {
+    height: 144vh;
+    position: absolute;
+  }
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 135vh;
+  }
 }
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1000px) {
   .titulo {
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 60%;
     color: white;
     font-family: "curs";
     text-align: center;
   }
   .titulo h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
-
   .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10%;
+    margin-top: 15%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+  }
+  .form3 .edit_label {
+    width: 40%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -46%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 75%;
+  }
+  .fonnos {
+    height: 130vh;
+    position: absolute;
+  }
+  .mis {
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+  }
+  .vis {
+    width: 30%;
+    text-align: center;
+    color: white;
+    margin-right: 68%;
+    margin-top: -35%;
+  }
+  .val {
+    width: 30%;
+    text-align: center;
+    color: white;
+    margin-top: -2%;
+    margin-right: 32%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    float: right;
+    margin-top: 2.2%;
+    margin-bottom: 1%;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10%;
+    margin-top: 19%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+  }
+  .form3 .edit_label {
+    width: 40%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    margin-left: 60%;
+    margin-top: -52%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 75%;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 185px;
+  }
+  .piepag {
+    height: 138vh;
+    position: absolute;
+  }
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 129vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .titulo {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+  .titulo h1 {
+    font-size: 50px;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 10%;
     margin-top: 20%;
     color: white;
@@ -623,10 +903,14 @@ footer, .pieind {
     border-radius: 20px;
     padding: 10px;
   }
-
   .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -640,31 +924,639 @@ footer, .pieind {
     padding: 10px;
     width: 75%;
   }
-
   .fonnos {
     height: 150vh;
     position: absolute;
   }
-
   .mg,
-.pa,
-.lz {
+  .pa,
+  .lz {
     width: 500px;
     height: 500px;
     margin-left: 130px;
   }
-
   .gps {
     margin-top: 10%;
   }
+  .card-columns .col .card {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .card-columns .col .card img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-  .piepag {
-    height: 140vh;
+@media only screen and (max-width: 767px) {
+  .checkbtn {
+    display: block;
+    margin-top: 0;
+    height: 10px;
+  }
+  nav {
+    height: 75px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 80px;
+  }
+  nav ul li a {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0px;
+  }
+  .imgind {
+    width: 767px;
+    height: 761px;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 2%;
+    top: 22%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 104px;
+  }
+  .form3 .edit_label {
+    width: 100%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 700px;
     position: absolute;
   }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  .fondcont .contacto form div .letra {
+    font-size: 24px;
+  }
+  .card-columns .col .card {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .card-columns .col .card img {
+    width: 100%;
+    height: auto;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .sucu {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+  }
+  .fonnos {
+    height: 150vh;
+    position: absolute;
+  }
+  .mis {
+    width: 60%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    margin-right: 18%;
+  }
+  .vis {
+    width: 60%;
+    text-align: center;
+    color: white;
+    margin-right: 18%;
+    margin-top: 5%;
+  }
+  .val {
+    width: 60%;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-right: 18%;
+  }
+}
 
+@media only screen and (max-width: 660px) {
+  .titulo {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: -8%;
+    top: 22%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 104px;
+  }
+  .form3 .edit_label {
+    width: 100%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 617px;
+    position: absolute;
+    left: -2%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 104%;
+  }
+  .fondcont .contacto form div .letra {
+    font-size: 24px;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 70px;
+  }
+  .gps {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .titulo {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+  .imgind {
+    width: auto;
+    height: 775px;
+  }
+  .titucont {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+    top: 15%;
+    left: 15%;
+    font-size: 60px;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 14%;
+    top: 22%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 104px;
+  }
+  .form3 .edit_label {
+    width: 100%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 1050px;
+    position: absolute;
+    left: -36%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 114%;
+  }
+  .fondcont .contacto form div .letra {
+    font-size: 24px;
+  }
+  .pieind {
+    position: relative;
+    margin-top: 133vh;
+  }
+  .fonnos {
+    height: 100vh;
+    position: absolute;
+  }
+  .mis {
+    width: 80%;
+    text-align: center;
+    margin-top: 8%;
+    color: white;
+    margin-right: 12%;
+  }
+  .vis {
+    width: 80%;
+    text-align: center;
+    color: white;
+    margin-right: 12%;
+    margin-top: 8%;
+  }
+  .val {
+    width: 80%;
+    text-align: center;
+    color: white;
+    margin-top: 8%;
+    margin-right: 12%;
+  }
+  .card-columns {
+    margin-left: 50%;
+  }
+  .card-columns .col .card {
+    width: 100%;
+  }
+  .card-columns .col .card img {
+    width: 100%;
+    height: auto;
+  }
+  .flex {
+    margin-top: -185%;
+    margin-left: -110%;
+    width: 100%;
+  }
+  .botonenv2 {
+    width: 35%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5e870;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    color: black;
+    padding: 15px 0px;
+    cursor: pointer;
+  }
+  .botonenv2:hover {
+    background-color: orange;
+  }
+  .botonborra2 {
+    width: 35%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5e870;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    color: black;
+    padding: 15px 0px;
+    cursor: pointer;
+  }
+  .botonborra2:hover {
+    background-color: orange;
+  }
+  .piepag {
+    height: 172vh;
+  }
   .pedido {
     background-image: url(fotos/1400.png);
-    height: 130vh;
+    height: 163vh;
   }
-}/*# sourceMappingURL=estilo.css.map */
+  .pieind2 {
+    position: absolute;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 500px;
+    height: 500px;
+    margin-left: 15px;
+  }
+  .gps {
+    margin-top: 10%;
+  }
+  .titen {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+    color: black;
+    top: 10%;
+    left: 2%;
+    font-size: 40px;
+  }
+  .gps .art .titxt {
+    width: 65%;
+    text-align: center;
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .flex {
+    margin-top: -202%;
+    margin-left: -110%;
+    width: 100%;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 400px;
+    height: 400px;
+    margin-left: 45px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 1000px;
+    position: absolute;
+    left: -36%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 114%;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .flex {
+    margin-top: -231%;
+    margin-left: -110%;
+    width: 100%;
+  }
+  .titucont {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+    top: 12%;
+    left: 15%;
+    font-size: 60px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 980px;
+    position: absolute;
+    left: -36%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 114%;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .titulo {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+  }
+  .titulo h1 {
+    font-size: 40px;
+  }
+  .titen {
+    position: absolute;
+    color: white;
+    font-family: "curs";
+    text-align: center;
+    color: black;
+    top: 10%;
+    left: 2%;
+    font-size: 40px;
+  }
+  .gps .art .titxt {
+    width: 70%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .mg,
+  .pa,
+  .lz {
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+  }
+  .form3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 5%;
+    top: 22%;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 104px;
+  }
+  .form3 .edit_label {
+    width: 100%;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-family: "cont";
+    display: block;
+    z-index: 0;
+    top: 900px;
+    position: absolute;
+    left: -45%;
+  }
+  .form2 .edit_label2 {
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    width: 114%;
+  }
+  .fonnos {
+    height: 100vh;
+    position: absolute;
+  }
+  .mis {
+    width: 80%;
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+    margin-right: 12%;
+  }
+  .vis {
+    width: 80%;
+    text-align: center;
+    color: white;
+    margin-right: 12%;
+    margin-top: 2%;
+  }
+  .val {
+    width: 80%;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    margin-right: 12%;
+  }
+  .piepag {
+    height: 178vh;
+  }
+  .pedido {
+    background-image: url(fotos/1400.png);
+    height: 165vh;
+  }
+  .pieind2, .pieinx, footer {
+    background-color: #791515;
+  }
+  .pieind2 img, .pieinx img, footer img {
+    margin-top: 1.5%;
+  }
+  .pieind2 .imgfoot, .pieinx .imgfoot, footer .imgfoot {
+    margin-top: 1.5%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
