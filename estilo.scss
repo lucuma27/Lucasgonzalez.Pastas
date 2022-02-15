@@ -45,6 +45,7 @@ nav {
     padding-bottom: 5px;
     padding-left: 5px;
   }
+
   div {
     img {
       height: 60px;
@@ -56,8 +57,10 @@ nav {
     float: right;
     margin-top: 1.2%;
     margin-bottom: 1%;
+
     li {
       display: inline-block;
+
       a {
         color: white;
         padding: 7px 15px;
@@ -65,6 +68,7 @@ nav {
         font-size: 20px;
         text-decoration: none;
       }
+
       a:hover {
         background-color: darkorange;
         transition: 0.5s;
@@ -85,6 +89,7 @@ nav {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
@@ -185,7 +190,8 @@ nav {
   border: none;
   color: black;
   padding: 15px 0px;
-  cursor: pointer;;
+  cursor: pointer;
+  ;
 }
 
 .botonborra2:hover {
@@ -438,6 +444,7 @@ footer {
 }
 
 @media only screen and (max-width: 1325px) {
+
   // Nav
   nav {
     ul {
@@ -456,6 +463,7 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .imgind {
     width: 1325px;
     height: 770px;
@@ -496,6 +504,7 @@ footer {
   .encontra {
     position: relative;
   }
+
   .titen {
     position: absolute;
     color: white;
@@ -506,6 +515,7 @@ footer {
     left: 10%;
     font-size: 45px;
   }
+
   .gps {
     display: flex;
     flex-direction: column;
@@ -637,6 +647,7 @@ footer {
     margin-top: -5%;
     margin-right: 32%;
   }
+
   //HACE TU PEDIDO
 
   .piepag {
@@ -684,6 +695,7 @@ footer {
     font-family: "cont";
     display: block;
   }
+
   //NOSOTROS
 
   .mis {
@@ -712,6 +724,7 @@ footer {
     margin-top: -5%;
     margin-right: 32%;
   }
+
   //ENCONTRANOS
   .mg,
   .pa,
@@ -941,6 +954,7 @@ footer {
       width: 75%;
     }
   }
+
   //NOSOTROS
 
   .fonnos {
@@ -986,8 +1000,10 @@ footer {
     margin-top: 0;
     height: 10px;
   }
+
   nav {
     height: 75px;
+
     ul {
       position: fixed;
       width: 100%;
@@ -1016,7 +1032,7 @@ footer {
     }
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0px;
   }
 
@@ -1068,6 +1084,7 @@ footer {
       width: 100%;
     }
   }
+
   .fondcont {
     .contacto {
       form {
@@ -1194,6 +1211,7 @@ footer {
       width: 104%;
     }
   }
+
   .fondcont {
     .contacto {
       form {
@@ -1221,6 +1239,7 @@ footer {
 }
 
 @media only screen and (max-width: 575px) {
+
   // INICIO
   .titulo {
     position: absolute;
@@ -1230,6 +1249,7 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .imgind {
     width: auto;
     height: 775px;
@@ -1287,6 +1307,7 @@ footer {
       width: 114%;
     }
   }
+
   .fondcont {
     .contacto {
       form {
@@ -1343,6 +1364,7 @@ footer {
     .col {
       .card {
         width: 100%;
+
         img {
           width: 100%;
           height: auto;
@@ -1350,6 +1372,7 @@ footer {
       }
     }
   }
+
   .flex {
     margin-top: -185%;
     margin-left: -110%;
@@ -1391,10 +1414,12 @@ footer {
   .piepag {
     height: 172vh;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 163vh;
   }
+
   .pieind2 {
     position: absolute;
   }
@@ -1422,6 +1447,7 @@ footer {
     left: 2%;
     font-size: 40px;
   }
+
   .gps .art .titxt {
     width: 65%;
     text-align: center;
@@ -1484,6 +1510,7 @@ footer {
     left: 15%;
     font-size: 60px;
   }
+
   .form2 {
     display: flex;
     flex-direction: column;
@@ -1503,6 +1530,7 @@ footer {
       width: 114%;
     }
   }
+
   .mg,
   .pa,
   .lz {
@@ -1523,7 +1551,7 @@ footer {
     font-family: "curs";
     text-align: center;
 
-    h1{
+    h1 {
       font-size: 40px;
     }
   }
@@ -1540,12 +1568,14 @@ footer {
     left: 2%;
     font-size: 40px;
   }
+
   .gps .art .titxt {
     width: 70%;
     text-align: center;
     margin-left: 10%;
     margin-top: 10%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1574,6 +1604,7 @@ footer {
       padding: 10px;
     }
   }
+
   .form2 {
     display: flex;
     flex-direction: column;
@@ -1593,6 +1624,7 @@ footer {
       width: 114%;
     }
   }
+
   //NOSOTROS
 
   .fonnos {
@@ -1630,17 +1662,23 @@ footer {
   .piepag {
     height: 178vh;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 165vh;
   }
-  .pieind2, .pieinx, footer{
+
+  .pieind2,
+  .pieinx,
+  footer {
     background-color: rgb(121, 21, 21);
-    img{
+
+    img {
       margin-top: 1.5%;
-      }
-        .imgfoot{
-          margin-top: 1.5%;
-        }
+    }
+
+    .imgfoot {
+      margin-top: 1.5%;
     }
   }
+}

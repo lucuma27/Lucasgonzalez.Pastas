@@ -31,8 +31,7 @@
   margin: 0px;
   text-decoration: none;
   list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 0;
 }
 
@@ -73,7 +72,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: darkorange;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
   color: black;
@@ -137,19 +135,10 @@ nav ul li a:hover {
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .form .sucu {
@@ -203,9 +192,7 @@ nav ul li a:hover {
 }
 
 .fondcont .contacto {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 25px;
 }
 
@@ -214,13 +201,8 @@ nav ul li a:hover {
 }
 
 .form3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 10%;
   margin-top: 10%;
   color: white;
@@ -237,13 +219,8 @@ nav ul li a:hover {
 }
 
 .form2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: white;
   font-size: 18px;
   font-family: "cont";
@@ -289,16 +266,9 @@ span {
 }
 
 .gps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   border: none;
   outline: none;
   width: 100%;
@@ -410,8 +380,7 @@ footer {
   bottom: 0px;
   height: 50px;
   width: 100%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .copy {
@@ -457,6 +426,7 @@ footer {
     margin-top: 1.5%;
     margin-bottom: 1%;
   }
+
   .titulo {
     position: absolute;
     top: 50%;
@@ -465,18 +435,15 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .imgind {
     width: 1325px;
     height: 770px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -484,12 +451,14 @@ footer {
     margin-left: 60%;
     margin-top: -35%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 65%;
   }
+
   .titucont {
     position: absolute;
     color: white;
@@ -499,9 +468,11 @@ footer {
     left: 20%;
     font-size: 60px;
   }
+
   .encontra {
     position: relative;
   }
+
   .titen {
     position: absolute;
     color: white;
@@ -512,17 +483,11 @@ footer {
     left: 10%;
     font-size: 45px;
   }
+
   .gps {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     border: none;
     outline: none;
     width: 100%;
@@ -535,6 +500,7 @@ footer {
     margin-left: 2%;
     margin-top: 5%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -542,11 +508,13 @@ footer {
     height: 500px;
     margin-left: 400px;
   }
+
   .gps .art .titxt {
     width: 65%;
     text-align: center;
     margin-left: 18%;
   }
+
   .titn {
     font-family: "curs";
     font-size: 40px;
@@ -556,6 +524,7 @@ footer {
     float: left;
     color: white;
   }
+
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -564,6 +533,7 @@ footer {
     margin-top: 10%;
     color: white;
   }
+
   .vis {
     width: 30%;
     float: right;
@@ -573,6 +543,7 @@ footer {
     margin-right: 60%;
     margin-top: -21.5%;
   }
+
   .val {
     width: 30%;
     float: right;
@@ -586,13 +557,8 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -600,12 +566,14 @@ footer {
     margin-left: 60%;
     margin-top: -38.5%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 65%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -613,6 +581,7 @@ footer {
     height: 500px;
     margin-left: 350px;
   }
+
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -621,6 +590,7 @@ footer {
     margin-top: 8%;
     color: white;
   }
+
   .vis {
     width: 30%;
     text-align: center;
@@ -629,6 +599,7 @@ footer {
     margin-right: 60%;
     margin-top: -21.5%;
   }
+
   .val {
     width: 30%;
     text-align: center;
@@ -637,10 +608,12 @@ footer {
     margin-top: -5%;
     margin-right: 32%;
   }
+
   .piepag {
     height: 148vh;
     position: absolute;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 139vh;
@@ -653,14 +626,10 @@ footer {
     margin-top: 1.9%;
     margin-bottom: 1%;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -668,14 +637,10 @@ footer {
     margin-left: 60%;
     margin-top: -44%;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 10%;
     margin-top: 15%;
     color: white;
@@ -683,6 +648,7 @@ footer {
     font-family: "cont";
     display: block;
   }
+
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -691,6 +657,7 @@ footer {
     margin-top: 5%;
     color: white;
   }
+
   .vis {
     width: 30%;
     text-align: center;
@@ -699,6 +666,7 @@ footer {
     margin-right: 60%;
     margin-top: -28%;
   }
+
   .val {
     width: 30%;
     text-align: center;
@@ -707,6 +675,7 @@ footer {
     margin-top: -5%;
     margin-right: 32%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -714,10 +683,12 @@ footer {
     height: 500px;
     margin-left: 280px;
   }
+
   .piepag {
     height: 144vh;
     position: absolute;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 135vh;
@@ -733,17 +704,14 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .titulo h1 {
     font-size: 65px;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 10%;
     margin-top: 15%;
     color: white;
@@ -751,20 +719,17 @@ footer {
     font-family: "cont";
     display: block;
   }
+
   .form3 .edit_label {
     width: 40%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -772,16 +737,19 @@ footer {
     margin-left: 60%;
     margin-top: -46%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 75%;
   }
+
   .fonnos {
     height: 130vh;
     position: absolute;
   }
+
   .mis {
     width: 30%;
     margin-right: 10%;
@@ -789,6 +757,7 @@ footer {
     margin-top: 15%;
     color: white;
   }
+
   .vis {
     width: 30%;
     text-align: center;
@@ -796,6 +765,7 @@ footer {
     margin-right: 68%;
     margin-top: -35%;
   }
+
   .val {
     width: 30%;
     text-align: center;
@@ -811,14 +781,10 @@ footer {
     margin-top: 2.2%;
     margin-bottom: 1%;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 10%;
     margin-top: 19%;
     color: white;
@@ -826,20 +792,17 @@ footer {
     font-family: "cont";
     display: block;
   }
+
   .form3 .edit_label {
     width: 40%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -847,12 +810,14 @@ footer {
     margin-left: 60%;
     margin-top: -52%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 75%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -860,10 +825,12 @@ footer {
     height: 500px;
     margin-left: 185px;
   }
+
   .piepag {
     height: 138vh;
     position: absolute;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 129vh;
@@ -879,17 +846,14 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .titulo h1 {
     font-size: 50px;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 10%;
     margin-top: 20%;
     color: white;
@@ -897,20 +861,17 @@ footer {
     font-family: "cont";
     display: block;
   }
+
   .form3 .edit_label {
     width: 40%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -918,16 +879,19 @@ footer {
     margin-left: 60%;
     margin-top: -58%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 75%;
   }
+
   .fonnos {
     height: 150vh;
     position: absolute;
   }
+
   .mg,
   .pa,
   .lz {
@@ -935,13 +899,16 @@ footer {
     height: 500px;
     margin-left: 130px;
   }
+
   .gps {
     margin-top: 10%;
   }
+
   .card-columns .col .card {
     margin-top: 40px;
     width: 100%;
   }
+
   .card-columns .col .card img {
     width: 100%;
     height: auto;
@@ -954,9 +921,11 @@ footer {
     margin-top: 0;
     height: 10px;
   }
+
   nav {
     height: 75px;
   }
+
   nav ul {
     position: fixed;
     width: 100%;
@@ -965,19 +934,16 @@ footer {
     top: 70px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 2;
   }
+
   nav ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     line-height: 80px;
   }
+
   nav ul li a {
     color: white;
     font-family: "Roboto", sans-serif;
@@ -986,21 +952,19 @@ footer {
     border-radius: 5px;
     font-size: 20px;
   }
-  #check:checked ~ ul {
+
+  #check:checked~ul {
     left: 0px;
   }
+
   .imgind {
     width: 767px;
     height: 761px;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     left: 2%;
     top: 22%;
     color: white;
@@ -1011,20 +975,17 @@ footer {
     position: absolute;
     top: 104px;
   }
+
   .form3 .edit_label {
     width: 100%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1033,47 +994,46 @@ footer {
     top: 700px;
     position: absolute;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 100%;
   }
+
   .fondcont .contacto form div .letra {
     font-size: 24px;
   }
+
   .card-columns .col .card {
     margin-top: 40px;
     width: 100%;
   }
+
   .card-columns .col .card img {
     width: 100%;
     height: auto;
   }
+
   .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+
   .form .sucu {
     font-style: italic;
     color: white;
     font-size: 20px;
   }
+
   .fonnos {
     height: 150vh;
     position: absolute;
   }
+
   .mis {
     width: 60%;
     margin-right: 10%;
@@ -1082,6 +1042,7 @@ footer {
     color: white;
     margin-right: 18%;
   }
+
   .vis {
     width: 60%;
     text-align: center;
@@ -1089,6 +1050,7 @@ footer {
     margin-right: 18%;
     margin-top: 5%;
   }
+
   .val {
     width: 60%;
     text-align: center;
@@ -1107,14 +1069,10 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     left: -8%;
     top: 22%;
     color: white;
@@ -1125,20 +1083,17 @@ footer {
     position: absolute;
     top: 104px;
   }
+
   .form3 .edit_label {
     width: 100%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1148,15 +1103,18 @@ footer {
     position: absolute;
     left: -2%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 104%;
   }
+
   .fondcont .contacto form div .letra {
     font-size: 24px;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1164,6 +1122,7 @@ footer {
     height: 500px;
     margin-left: 70px;
   }
+
   .gps {
     margin-top: 10%;
   }
@@ -1178,10 +1137,12 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .imgind {
     width: auto;
     height: 775px;
   }
+
   .titucont {
     position: absolute;
     color: white;
@@ -1191,14 +1152,10 @@ footer {
     left: 15%;
     font-size: 60px;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     left: 14%;
     top: 22%;
     color: white;
@@ -1209,20 +1166,17 @@ footer {
     position: absolute;
     top: 104px;
   }
+
   .form3 .edit_label {
     width: 100%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1232,23 +1186,28 @@ footer {
     position: absolute;
     left: -36%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 114%;
   }
+
   .fondcont .contacto form div .letra {
     font-size: 24px;
   }
+
   .pieind {
     position: relative;
     margin-top: 133vh;
   }
+
   .fonnos {
     height: 100vh;
     position: absolute;
   }
+
   .mis {
     width: 80%;
     text-align: center;
@@ -1256,6 +1215,7 @@ footer {
     color: white;
     margin-right: 12%;
   }
+
   .vis {
     width: 80%;
     text-align: center;
@@ -1263,6 +1223,7 @@ footer {
     margin-right: 12%;
     margin-top: 8%;
   }
+
   .val {
     width: 80%;
     text-align: center;
@@ -1270,21 +1231,26 @@ footer {
     margin-top: 8%;
     margin-right: 12%;
   }
+
   .card-columns {
     margin-left: 50%;
   }
+
   .card-columns .col .card {
     width: 100%;
   }
+
   .card-columns .col .card img {
     width: 100%;
     height: auto;
   }
+
   .flex {
     margin-top: -185%;
     margin-left: -110%;
     width: 100%;
   }
+
   .botonenv2 {
     width: 35%;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1296,9 +1262,11 @@ footer {
     padding: 15px 0px;
     cursor: pointer;
   }
+
   .botonenv2:hover {
     background-color: orange;
   }
+
   .botonborra2 {
     width: 35%;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1310,19 +1278,24 @@ footer {
     padding: 15px 0px;
     cursor: pointer;
   }
+
   .botonborra2:hover {
     background-color: orange;
   }
+
   .piepag {
     height: 172vh;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 163vh;
   }
+
   .pieind2 {
     position: absolute;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1330,9 +1303,11 @@ footer {
     height: 500px;
     margin-left: 15px;
   }
+
   .gps {
     margin-top: 10%;
   }
+
   .titen {
     position: absolute;
     color: white;
@@ -1343,6 +1318,7 @@ footer {
     left: 2%;
     font-size: 40px;
   }
+
   .gps .art .titxt {
     width: 65%;
     text-align: center;
@@ -1356,6 +1332,7 @@ footer {
     margin-left: -110%;
     width: 100%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1363,14 +1340,10 @@ footer {
     height: 400px;
     margin-left: 45px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1380,6 +1353,7 @@ footer {
     position: absolute;
     left: -36%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
@@ -1394,6 +1368,7 @@ footer {
     margin-left: -110%;
     width: 100%;
   }
+
   .titucont {
     position: absolute;
     color: white;
@@ -1403,14 +1378,10 @@ footer {
     left: 15%;
     font-size: 60px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1420,12 +1391,14 @@ footer {
     position: absolute;
     left: -36%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 114%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1444,9 +1417,11 @@ footer {
     font-family: "curs";
     text-align: center;
   }
+
   .titulo h1 {
     font-size: 40px;
   }
+
   .titen {
     position: absolute;
     color: white;
@@ -1457,12 +1432,14 @@ footer {
     left: 2%;
     font-size: 40px;
   }
+
   .gps .art .titxt {
     width: 70%;
     text-align: center;
     margin-left: 10%;
     margin-top: 10%;
   }
+
   .mg,
   .pa,
   .lz {
@@ -1470,14 +1447,10 @@ footer {
     height: 300px;
     margin-left: 40px;
   }
+
   .form3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     left: 5%;
     top: 22%;
     color: white;
@@ -1488,20 +1461,17 @@ footer {
     position: absolute;
     top: 104px;
   }
+
   .form3 .edit_label {
     width: 100%;
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
   }
+
   .form2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     font-family: "cont";
@@ -1511,16 +1481,19 @@ footer {
     position: absolute;
     left: -45%;
   }
+
   .form2 .edit_label2 {
     border: 2px solid brown;
     border-radius: 20px;
     padding: 10px;
     width: 114%;
   }
+
   .fonnos {
     height: 100vh;
     position: absolute;
   }
+
   .mis {
     width: 80%;
     text-align: center;
@@ -1528,6 +1501,7 @@ footer {
     color: white;
     margin-right: 12%;
   }
+
   .vis {
     width: 80%;
     text-align: center;
@@ -1535,6 +1509,7 @@ footer {
     margin-right: 12%;
     margin-top: 2%;
   }
+
   .val {
     width: 80%;
     text-align: center;
@@ -1542,21 +1517,33 @@ footer {
     margin-top: 2%;
     margin-right: 12%;
   }
+
   .piepag {
     height: 178vh;
   }
+
   .pedido {
     background-image: url(fotos/1400.png);
     height: 165vh;
   }
-  .pieind2, .pieinx, footer {
+
+  .pieind2,
+  .pieinx,
+  footer {
     background-color: #791515;
   }
-  .pieind2 img, .pieinx img, footer img {
+
+  .pieind2 img,
+  .pieinx img,
+  footer img {
     margin-top: 1.5%;
   }
-  .pieind2 .imgfoot, .pieinx .imgfoot, footer .imgfoot {
+
+  .pieind2 .imgfoot,
+  .pieinx .imgfoot,
+  footer .imgfoot {
     margin-top: 1.5%;
   }
 }
+
 /*# sourceMappingURL=estilo.css.map */
